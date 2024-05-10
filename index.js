@@ -36,16 +36,18 @@ const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
 const [bessie, ,dolly, babe, little] = farmAnimals.split(' ');
   
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
-  //remove chicken from array .... don't for get horse is gone
-  //use clore varible to 
-  //Destructure animal array
-  const [blackAndWhite, ,black, pink] = farmAnimals.split(' ');
-  console.log(blackAndWhite,black, pink);
-
+ 
+const [blackAndWhite, ,black, pink] = farmAnimals.split(' ');
 
 // Arrays
 
 // 4. Use destructuring to assign appropriate variables using the color names.
+
+// is an array --- order matters
+// just print out color
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+console.log(red, orange, yellow, green, blue, indigo, violet);
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
 
