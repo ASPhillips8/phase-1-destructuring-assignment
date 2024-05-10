@@ -32,12 +32,16 @@ const nestedMuppet = {
 const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
-  // take away horse --> dont forget space of it will assing to wrong name!!!!
-  // assing names to animal
-  // Destructure of string
-  const [bessie, ,dolly, babe, little] = farmAnimals.split(' ');
-  console.log(bessie, dolly, babe, little);
+ 
+const [bessie, ,dolly, babe, little] = farmAnimals.split(' ');
+  
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
+  //remove chicken from array .... don't for get horse is gone
+  //use clore varible to 
+  //Destructure animal array
+  const [blackAndWhite, ,black, pink] = farmAnimals.split(' ');
+  console.log(blackAndWhite,black, pink);
+
 
 // Arrays
 
