@@ -46,26 +46,27 @@ const [blackAndWhite, ,black, pink] = farmAnimals.split(' ');
 const [red, orange, yellow, green, blue, indigo, violet] = colors;
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
-  
-// leave out indigo
-  // just first letter
-const [r, o, y, g, b, , v] = colors;
-console.log(r, o, y, b, v)
-// why does green not show when log. test passes but ????
 
+const [r, o, y, g, b, , v] = colors;
+// why does green not show when console.log test passes but ???? logs "red orange yellow blue violet"
 
 // 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
 
-// just indigo in array
-// us indg
 const [ , , , , , indg, ,] = colors;
-console.log(indg)
-
-// why does green not show on log. test passes but 
 
 // Objects
 
 // 7. Use destructuring to assign all variables using the keys as the variable names
+
+ // assuming using first object muppet name ... will do for second object as well (not nested stuff)
+ // since object need to use {}
+ // use keys
+ // order doesn't matter.....
+  const {muppetName, song, job, partner, color} = muppet;
+  const {nestedName, nestedColor, album, nestedJob, nestedPartner} = nestedMuppet;
+   /// interetinng desturture of album results in log of the entire album object...could use dot notation to get more nested??
+  console.log(muppetName, song, job, partner, color);
+  console.log(nestedName, nestedColor, album, nestedJob, nestedPartner);
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 
