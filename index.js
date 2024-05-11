@@ -57,16 +57,9 @@ const [ , , , , , indg, ,] = colors;
 // Objects
 
 // 7. Use destructuring to assign all variables using the keys as the variable names
-
- // assuming using first object muppet name ... will do for second object as well (not nested stuff)
- // since object need to use {}
- // use keys
- // order doesn't matter.....
   const {muppetName, song, job, partner, color} = muppet;
-  const {nestedName, nestedColor, album, nestedJob, nestedPartner} = nestedMuppet;
-   /// interetinng desturture of album results in log of the entire album object...could use dot notation to get more nested??
-  console.log(muppetName, song, job, partner, color);
-  console.log(nestedName, nestedColor, album, nestedJob, nestedPartner);
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob, nestedPartner} = nestedMuppet 
